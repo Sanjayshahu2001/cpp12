@@ -1,30 +1,38 @@
 #include <iostream>
 
 using namespace std;
-class Average
+class AddAmount
 {
-    public:
-    float a,b,c,d,e;
+public:
+    int A;
 
-    void calc()
+    AddAmount()
     {
-        cout<<"Enter three Values:"<<endl;
-        cin>>a>>b>>c;
-        d=a+b+c;//20+30+40
-        e=d/300*100;//90/500*100
-        //cout<<"Average Is:"<<e<<endl;
+                cout<<"Def"<<endl;
+        A=50;
+
     }
-   void showdata()
+    AddAmount(int x)
     {
-        cout<<"Average Is:"<<e<<endl;
+        A=x+50;
+
+
+    }
+
+    void show()
+    {
+        cout<<"Total  Amount:"<<A<<endl;
+
     }
 };
 int main()
 {
-    Average a;
-    a.calc();
-    a.showdata();
+    int e;
+    cout<<"Enter Add Amount:"<<e;
+    cin>>e;
+    AddAmount a,a1(e);
+    a1.show();
+    //a.show();
 
-    //cout << "Hello world!" << endl;
     return 0;
 }
